@@ -1,0 +1,23 @@
+While using a prepros
+always use the current projects SCSS folder 
+as it is currently having the previous prject's SCSS folder we have to remove it from the Prepros and open the Dashboards 
+SASS folder to compile.
+
+(!Warning: when you copy paste a project and it has SCSS folder the compiler have this prepros config file which
+uses the path of that project so we have to delete that file AS WELL AS reset the path of this project's theme.scss)
+
+(INFO: Prepros is a good software and it always tells you whenever you have a missing css syntax and it shows failed
+let me show you by creating an error)
+
+
+A Dashboard should never have a scroll bar only scoll bar inside the displayBox 
+side bar should be fixed / sticky and steady so we will subtract the padding we gave 
+
+i was just thinking of removing the padding from the parent alphaBox but it is good i should show you 
+some experience where the scrollbar shows up and how to get rid of it so let me show you
+
+Very next of the .abc will go red coz we used .abc + a {} so very next sibling<a> after abc will go red
+
+Layout smjh a gya
+
+Ye banao 

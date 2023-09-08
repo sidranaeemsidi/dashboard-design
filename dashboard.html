@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+  </head>
+  <body>
+    <main class="alphaBox">
+      <!-- side bar -->
+      <div class="sideBar">
+        <div class="brand" class="d-flex align-items-center justify-content-between">
+          <a href="#"><i class="fa-solid fa-box"></i></a>
+          <a href="#">Dash X</a>
+          <button class="btnCloser">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <ul>
+          <li>
+           <i class="fa-regular fa-file"></i>
+            <a href="#">Pojects</a>
+          </li>
+          <li>
+           <i class="fa-regular fa-user"></i>
+            <a href="#">Resourcing</a>
+          </li>
+          <li>
+           <i class="fa-regular fa-copy"></i>
+            <a href="#">Time sheets</a>
+          </li>
+          <li>
+           <i class="fa-regular fa-hand"></i>
+            <a href="#">Income</a>
+          </li>
+          <li>
+           <i class="fa-regular fa-folder"></i>
+            <a href="#">Resourcing</a>
+          </li>
+          <li>
+           <i class="fa-regular fa-file"></i>
+            <a href="#">Expenditure</a>
+          </li>
+          <li>
+           <i class="fa-regular fa-folder"></i>
+            <a href="#">Assets</a>
+          </li>
+          <li>
+            <i class="fa-regular fa-folder"></i>
+            <a href="#">Libilities</a>
+          </li>
+        </ul>
+      </div>
+      <div class="overlay"></div>
+      <!-- view box -->
+      <div class="displayBox">
+        <div class="topBar">
+          <button class="btn sideBarToggler p-0"><i class="fa-solid fa-bars"></i></button>
+          <div class="search">
+            <i class="fa-solid fa-search"></i>
+          </div>
+          <div class="userActions">
+            <a href="#"><i class="fa-solid fa-box"></i></a>
+            <a href="#"><i class="fa-solid fa-bell"></i></a>
+          </div>
+          <div class="profile">
+            <img src="./assets/images/5.jpg" alt="123">
+          </div>
+        </div>
+        <!--view box-->
+        <div class="displayViewBox">
+          <h1>Income</h1>
+          <!--tab accordion-->
+          <ul class="tab nav nav-tabs d-none d-lg-flex " id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">   
+              <button class="tabLink nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"   type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Invoices</button> </li>
+          <li class="nav-item" role="presentation">
+            <button class="tabLink nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Estimates</button></li>
+            <li class="nav-item" role="presentation">
+            <button class="tabLink nav-link">Recurring Invoices</button></li>
+            <li class="nav-item" role="presentation">
+            <button class="tabLink nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Clients</button></li>
+
+          </ul>
+        </div>
+      <div class="tab-content accordion" id="myTabContent">
+        <div class="tab-pane fade show active accordion-item" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="toolBar">
+        <div class="iconBar">
+          <button>  <i class="fa-regular fa-copy"></i> </button>
+          <button>  <i class="fa-regular fa-paste"></i> </button>
+          <button>  <i class="fa-solid fa-print"></i></i> </button>
+          <button>  <i class="fa-solid fa-tag"></i> </button>
+          <button>  <i class="fa-solid fa-trash"></i> </button>
+        </div>
+        <div class="drop">
+          <div class="recode">9 recodes </div>
+          <div class="dropLink">
+            <i class="fa-regular fa-star"></i>
+            <a>Default view</a>
+       
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="dropMenu">
+            <a href="#">General Settings</a>
+            <a href="#">Profile Settings</a>
+            <a href="#">Account Settings</a>
+            <a href="#">Admin Settings</a>
+          </div>
+          <i class="fa-solid fa-filter"></i>
+          <button>  <i class="fa-regular fa-plus"></i> </button>
+        </div>
+      </div>
+      <div class="tableContainer">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"> <input type="checkbox">Number <i class="fa-solid fa-sort"></i></th>
+              <th scope="col ">Client <i class="fa-solid fa-sort"></i></th>
+              <th scope="col ">Amount <i class="fa-solid fa-sort"></i></th>
+              <th scope="col ">Date <i class="fa-solid fa-sort"></i></th>
+              <th scope="col ">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"> <input type="checkbox">H001</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td><i class="fa-solid fa-circle-dot"></i></td>
+            </tr>
+            <tr>
+              <th scope="row"> <input type="checkbox"> H002</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td><i class="fa-solid fa-circle-dot"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">  <input type="checkbox">H003</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td><i class="fa-solid fa-circle-dot"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">  <input type="checkbox">H004</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td><i class="fa-solid fa-circle-dot"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">  <input type="checkbox">H005</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td><i class="fa-solid fa-circle-dot"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">  <input type="checkbox">H006</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td><i class="fa-solid fa-circle-dot"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="tab-pane fade accordion-item"id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">123</div>
+    </div>
+      
+    
+      <!-- <div class="tab-content accordion" id="myTabContent">
+        <div class="" >
+      
+          <h2 class="accordion-header d-lg-none" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show  d-lg-block" aria-labelledby="headingOne" data-bs-parent="#myTabContent">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+      
+        </div>
+        <div class="tab-pane fade accordion-item" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <h2 class="accordion-header d-lg-none" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingTwo" data-bs-parent="#myTabContent">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade accordion-item" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+          <h2 class="accordion-header d-lg-none" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingThree" data-bs-parent="#myTabContent">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div> -->
+      </div>
+    </main>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- SCripts -->
+    <script src="assets/js/theme.js"></script>
+  </body>
+</html>
